@@ -43,8 +43,9 @@ Data Files: movie_dic.csv, reviews_top.csv, df_IMDb_top25_info.csv
 
 ## Stage 3: Recommender System
 File: Stage_3_Recommender_System.ipynb
-Data Files: reviews_250.csv (web crawler from stage 2), dataset_review_1.csv (from stage 1 final step), df_IMDb.csv (from stage 2 movie info), glove.6B.100d.txt (download from glove.6B.zip)
-*Collaborative Filtering
+Data Files: reviews_250.csv (web crawler from stage 2), dataset_review_1.csv (from stage 1 final step), df_IMDb.csv (from stage 2 movie info), glove.6B.100d.txt (download from glove.6B.zip). 
+  
+* Collaborative Filtering
 1.	load in reviews_250.csv 
 2.	create user_id and movie_dictionary
 3.	transform review dataset into a set: {'user1’: [movie rated score, 0:no rating score for this movie]}
@@ -53,19 +54,20 @@ Data Files: reviews_250.csv (web crawler from stage 2), dataset_review_1.csv (fr
 6.	get a mean rating score for each user
 7.	predict the final score for the target user for one movie
 8.	get a prediction for each non-rating movie and get top K movies with high predicted scores
-9.	assume user rates "the Dark Knight" movie with a score of 10, get ten recommendation movies for the target user (sample output)
-* Collaborative Filtering with sentiment analysis
-1.	load sentiment analyzed dataset from dataset_review_1.csv
-2.	add sentiment_key into the reviews_250 table
-3.	transform review dataset into a set: {'user1’: [movie rated score, 0:no rating score for this movie]}
-4.	calculate the cosine similarity
-5.	get the most similar taste user
-6.	get a mean rating score for each user
-7.	predict the final score for the target user for one movie
-8.	get a prediction for each non-rating movie and get top K movies with high predicted scores
-9.	assume user rate "the Dark Knight" movie with a score of 2, get ten recommendation movies for the target user (sample output)
+9.	assume user rates "the Dark Knight" movie with a score of 10, get ten recommendation movies for the target user (sample output)  
 
-*Content-Based Filtering
+* Collaborative Filtering with sentiment analysis
+11.	load sentiment analyzed dataset from dataset_review_1.csv
+12.	add sentiment_key into the reviews_250 table
+13.	transform review dataset into a set: {'user1’: [movie rated score, 0:no rating score for this movie]}
+14.	calculate the cosine similarity
+15.	get the most similar taste user
+16.	get a mean rating score for each user
+17.	predict the final score for the target user for one movie
+18.	get a prediction for each non-rating movie and get top K movies with high predicted scores
+19.	assume user rate "the Dark Knight" movie with a score of 2, get ten recommendation movies for the target user (sample output)
+   
+* Content-Based Filtering
 1.	load dataset df_IMDb.csv and apply EDA to find some insights from the dataset
 2.	convert features moive_title and Movie_intro vectors through GloVe
 3.	list all movie genres
