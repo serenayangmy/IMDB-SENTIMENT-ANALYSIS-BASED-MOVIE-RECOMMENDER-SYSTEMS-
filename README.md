@@ -77,7 +77,7 @@ Data Files: reviews_250.csv (web crawler from stage 2), dataset_review_1.csv (fr
 7.	calculate the cosine similarity between the favorite one and other movies
 8.	assume user rate like "the Dark Knight" movie, get ten recommendation movies for the target user (sample output)
 
-*Rule-Based Filtering
+* Rule-Based Filtering
 1.	load in dataset reviews_250.csv
 2.	create a table - rows are user names, columns are movie titles, and values are rating scores
 3.	get the correlation between users who recently watched movie vs. remaining all other movies, comparing the correlation matrix between movies
