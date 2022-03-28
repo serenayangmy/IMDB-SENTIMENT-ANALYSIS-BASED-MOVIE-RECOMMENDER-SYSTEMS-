@@ -1,8 +1,8 @@
 # Group 3:
-Xiaojing Shen/xshen16@depaul.edu
-Serena Yang/myang43@depaul.edu
-Yue Hou/yhou14@depaul.edu
-
+Xiaojing Shen/xshen16@depaul.edu   
+Serena Yang/myang43@depaul.edu   
+Yue Hou/yhou14@depaul.edu    
+ 
 # < Sentiment-Analysis-Based Movie Recommender Systems>
 ## Description
 There are three milestones in this project. Sentiment analysis was first implemented on an IMDb dataset from Kaggle, on which multiple models will be applied to select the ideal arithmetic model. Next, we applied a web crawler on IMDb to crawl data that fit in the following recommender systems. The last step was integrating crawled data with the selected sentiment model to build a personalized recommender system.
